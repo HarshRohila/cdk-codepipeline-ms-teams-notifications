@@ -19,13 +19,21 @@ async function createMsTeamNotification(event: any): Promise<any> {
   const detailType = myObj.detailType;
   const state = myObj.detail.state;
   const pipeline = myObj.detail.pipeline;
-
+  let color = "";
+  if (state === "SUCCEEDED") {
+    color = "00FF00";
+  } else if (state === "FAILED") {
+    color = "FF0000";
+  } else {
+    color = "000000";
+  }
   const axios = require("axios");
 
   const payload = {
     "@type": "MessageCard",
     "@context": "http://schema.org/extensions",
-    themeColor: "00FF00",
+
+    themeColor: color,
 
     summary: pipeline,
 
