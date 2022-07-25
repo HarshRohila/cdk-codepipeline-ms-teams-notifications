@@ -101,6 +101,10 @@
       "type": "build"
     },
     {
+      "name": "axios",
+      "type": "bundled"
+    },
+    {
       "name": "aws-cdk-lib",
       "version": "^2.0.0",
       "type": "peer"

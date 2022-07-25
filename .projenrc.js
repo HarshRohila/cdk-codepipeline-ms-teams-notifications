@@ -15,6 +15,8 @@ const project = new awscdk.AwsCdkConstructLibrary({
     "dev:synth": "pnpm build && cdk synth --app='./lib/integ.default.js'",
   },
 
+  bundledDeps: ["axios"],
+
   gitignore: ["cdk.out"],
 
   // cdkDependencies: undefined,      /* Which AWS CDK modules (those that start with "@aws-cdk/") does this library require when consumed? */
