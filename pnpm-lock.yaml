@@ -38,25 +38,15 @@ dependencies:
 devDependencies:
   '@types/jest': 27.5.2
   '@types/node': 14.18.22
-<<<<<<< HEAD
-  '@typescript-eslint/eslint-plugin': 5.30.6_2vt5mtrqleafs33qg2bhpmbaqm
-  '@typescript-eslint/parser': 5.30.6_4x5o4skxv6sl53vpwefgt23khm
-=======
   '@typescript-eslint/eslint-plugin': 5.30.6_d567d64e305900596f70368277b02083
   '@typescript-eslint/parser': 5.30.6_eslint@8.19.0+typescript@4.7.4
->>>>>>> bc2e86c6a393dacd3529796476b07e26bd505455
   aws-cdk-lib: 2.0.0_constructs@10.0.5
   constructs: 10.0.5
   esbuild: 0.14.50
   eslint: 8.19.0
   eslint-import-resolver-node: 0.3.6
-<<<<<<< HEAD
-  eslint-import-resolver-typescript: 3.2.6_q2xwze32dd33a2fc2qubwr4ie4
-  eslint-plugin-import: 2.26.0_curnkfysalsmpt2zjksisckoci
-=======
   eslint-import-resolver-typescript: 3.2.6_86af6c937a18f7b068a2d4281b478827
   eslint-plugin-import: 2.26.0_1522d5171202e4c7cf594aa489094e12
->>>>>>> bc2e86c6a393dacd3529796476b07e26bd505455
   jest: 27.5.1
   jest-junit: 13.2.0
   jsii: 1.62.0
@@ -67,11 +57,7 @@ devDependencies:
   npm-check-updates: 12.5.12
   projen: 0.58.30
   standard-version: 9.5.0
-<<<<<<< HEAD
-  ts-jest: 27.1.5_byqdnnsvlyhdwshvndv76oxqqy
-=======
   ts-jest: 27.1.5_0e2036b6555e0e3b48f568ebff3af086
->>>>>>> bc2e86c6a393dacd3529796476b07e26bd505455
   typescript: 4.7.4
 
 packages:

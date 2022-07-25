@@ -340,8 +340,27 @@ Convert an object, potentially containing tokens, to a JSON string.
 
 | **Name** | **Description** |
 | --- | --- |
+| <code><a href="#cdk-codepipeline-ms-teams-notifications.CdkStarterStack.isConstruct">isConstruct</a></code> | Checks if `x` is a construct. |
 | <code><a href="#cdk-codepipeline-ms-teams-notifications.CdkStarterStack.isStack">isStack</a></code> | Return whether the given object is a Stack. |
 | <code><a href="#cdk-codepipeline-ms-teams-notifications.CdkStarterStack.of">of</a></code> | Looks up the first stack scope in which `construct` is defined. |
+
+---
+
+##### ~~`isConstruct`~~ <a name="isConstruct" id="cdk-codepipeline-ms-teams-notifications.CdkStarterStack.isConstruct"></a>
+
+```typescript
+import { CdkStarterStack } from 'cdk-codepipeline-ms-teams-notifications'
+
+CdkStarterStack.isConstruct(x: any)
+```
+
+Checks if `x` is a construct.
+
+###### `x`<sup>Required</sup> <a name="x" id="cdk-codepipeline-ms-teams-notifications.CdkStarterStack.isConstruct.parameter.x"></a>
+
+- *Type:* any
+
+Any object.
 
 ---
 
@@ -387,6 +406,7 @@ The construct to start the search from.
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
+| <code><a href="#cdk-codepipeline-ms-teams-notifications.CdkStarterStack.property.node">node</a></code> | <code>constructs.Node</code> | The tree node. |
 | <code><a href="#cdk-codepipeline-ms-teams-notifications.CdkStarterStack.property.account">account</a></code> | <code>string</code> | The AWS account into which this stack will be deployed. |
 | <code><a href="#cdk-codepipeline-ms-teams-notifications.CdkStarterStack.property.artifactId">artifactId</a></code> | <code>string</code> | The ID of the cloud assembly artifact for this stack. |
 | <code><a href="#cdk-codepipeline-ms-teams-notifications.CdkStarterStack.property.availabilityZones">availabilityZones</a></code> | <code>string[]</code> | Returns the list of AZs that are available in the AWS environment (account/region) associated with this stack. |
@@ -406,6 +426,18 @@ The construct to start the search from.
 | <code><a href="#cdk-codepipeline-ms-teams-notifications.CdkStarterStack.property.templateOptions">templateOptions</a></code> | <code>aws-cdk-lib.ITemplateOptions</code> | Options for CloudFormation template (like version, transform, description). |
 | <code><a href="#cdk-codepipeline-ms-teams-notifications.CdkStarterStack.property.terminationProtection">terminationProtection</a></code> | <code>boolean</code> | Whether termination protection is enabled for this stack. |
 | <code><a href="#cdk-codepipeline-ms-teams-notifications.CdkStarterStack.property.urlSuffix">urlSuffix</a></code> | <code>string</code> | The Amazon domain suffix for the region in which this stack is defined. |
+
+---
+
+##### `node`<sup>Required</sup> <a name="node" id="cdk-codepipeline-ms-teams-notifications.CdkStarterStack.property.node"></a>
+
+```typescript
+public readonly node: Node;
+```
+
+- *Type:* constructs.Node
+
+The tree node.
 
 ---
 

@@ -1,9 +1,4 @@
-<<<<<<< HEAD
-import axios from "axios";
-
-=======
 import axios from 'axios';
->>>>>>> bc2e86c6a393dacd3529796476b07e26bd505455
 export { createMsTeamNotification };
 
 async function createMsTeamNotification(event: any): Promise<any> {
@@ -33,10 +28,6 @@ async function createMsTeamNotification(event: any): Promise<any> {
   } else {
     color = '000000';
   }
-<<<<<<< HEAD
-
-=======
->>>>>>> bc2e86c6a393dacd3529796476b07e26bd505455
   const payload = {
     '@type': 'MessageCard',
     '@context': 'http://schema.org/extensions',
