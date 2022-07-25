@@ -11,10 +11,11 @@ const project = new awscdk.AwsCdkConstructLibrary({
   packageManager: NodePackageManager.PNPM,
 
   scripts: {
-    "dev:deploy":
-      "pnpm build && pnpx cdk deploy --app='./lib/integ.default.js'",
-    "dev:synth": "pnpm build && pnpx cdk synth --app='./lib/integ.default.js'",
+    "dev:deploy": "pnpm build && cdk deploy --app='./lib/integ.default.js'",
+    "dev:synth": "pnpm build && cdk synth --app='./lib/integ.default.js'",
   },
+
+  gitignore: ["cdk.out"],
 
   // cdkDependencies: undefined,      /* Which AWS CDK modules (those that start with "@aws-cdk/") does this library require when consumed? */
   // cdkTestDependencies: undefined,  /* AWS CDK modules required for testing. */

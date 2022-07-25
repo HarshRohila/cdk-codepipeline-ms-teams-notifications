@@ -104,7 +104,7 @@
       "name": "dev:deploy",
       "steps": [
         {
-          "exec": "pnpm build && pnpx cdk deploy --app='./lib/integ.default.js'"
+          "exec": "pnpm build && cdk deploy --app='./lib/integ.default.js'"
         }
       ]
     },
@@ -112,7 +112,7 @@
       "name": "dev:synth",
       "steps": [
         {
-          "exec": "pnpm build && pnpx cdk synth --app='./lib/integ.default.js'"
+          "exec": "pnpm build && cdk synth --app='./lib/integ.default.js'"
         }
       ]
     },
