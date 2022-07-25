@@ -1,3 +1,5 @@
+import axios from "axios";
+
 export { createMsTeamNotification };
 
 async function createMsTeamNotification(event: any): Promise<any> {
@@ -27,7 +29,6 @@ async function createMsTeamNotification(event: any): Promise<any> {
   } else {
     color = "000000";
   }
-  const axios = require("axios");
 
   const payload = {
     "@type": "MessageCard",
