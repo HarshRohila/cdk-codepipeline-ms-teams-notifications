@@ -1,23 +1,24 @@
-const { awscdk } = require("projen");
-const { NodePackageManager } = require("projen/lib/javascript");
+const { awscdk } = require('projen');
+const { NodePackageManager } = require('projen/lib/javascript');
 const project = new awscdk.AwsCdkConstructLibrary({
-  author: "Harsh Rohila",
-  authorAddress: "harsh.rohila@mrisoftware.com",
-  cdkVersion: "2.0.0",
-  defaultReleaseBranch: "master",
-  name: "cdk-codepipeline-ms-teams-notifications",
+  author: 'Harsh Rohila',
+  authorAddress: 'harsh.rohila@mrisoftware.com',
+  cdkVersion: '2.0.0',
+  defaultReleaseBranch: 'master',
+  name: 'cdk-codepipeline-ms-teams-notifications',
   repositoryUrl:
-    "https://github.com/harsh.rohila/cdk-codepipeline-ms-teams-notifications.git",
+    'https://github.com/harsh.rohila/cdk-codepipeline-ms-teams-notifications.git',
   packageManager: NodePackageManager.PNPM,
 
   scripts: {
-    "dev:deploy": "pnpm build && cdk deploy --app='./lib/integ.default.js'",
-    "dev:synth": "pnpm build && cdk synth --app='./lib/integ.default.js'",
+    'dev:deploy': "pnpm build && cdk deploy --app='./lib/integ.default.js'",
+    'dev:synth': "pnpm build && cdk synth --app='./lib/integ.default.js'",
   },
 
-  bundledDeps: ["axios"],
+  bundledDeps: ['axios'],
+  devDeps: ['esbuild'],
 
-  gitignore: ["cdk.out"],
+  gitignore: ['cdk.out'],
 
   // cdkDependencies: undefined,      /* Which AWS CDK modules (those that start with "@aws-cdk/") does this library require when consumed? */
   // cdkTestDependencies: undefined,  /* AWS CDK modules required for testing. */
