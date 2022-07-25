@@ -1,8 +1,6 @@
 export { createMsTeamNotification };
 
-async function createMsTeamNotification(
-  event: any,
-): Promise<any> {
+async function createMsTeamNotification(event: any): Promise<any> {
   console.log('event 👉', event);
 
   return {

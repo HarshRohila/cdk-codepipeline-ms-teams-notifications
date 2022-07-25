@@ -1,4 +1,5 @@
 const { awscdk } = require("projen");
+const { NodePackageManager } = require("projen/lib/javascript");
 const project = new awscdk.AwsCdkConstructLibrary({
   author: "Harsh Rohila",
   authorAddress: "harsh.rohila@mrisoftware.com",
@@ -7,10 +8,12 @@ const project = new awscdk.AwsCdkConstructLibrary({
   name: "cdk-codepipeline-ms-teams-notifications",
   repositoryUrl:
     "https://github.com/harsh.rohila/cdk-codepipeline-ms-teams-notifications.git",
-  tsconfig: {
-    compilerOptions: {
-      skipLibCheck: true,
-    },
+  packageManager: NodePackageManager.PNPM,
+
+  scripts: {
+    "dev:deploy":
+      "pnpm build && pnpx cdk deploy --app='./lib/integ.default.js'",
+    "dev:synth": "pnpm build && pnpx cdk synth --app='./lib/integ.default.js'",
   },
 
   // cdkDependencies: undefined,      /* Which AWS CDK modules (those that start with "@aws-cdk/") does this library require when consumed? */
