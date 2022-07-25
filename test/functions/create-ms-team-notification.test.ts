@@ -40,11 +40,7 @@ describe("create-ms-team-notification | Function", () => {
       statusCode: 200,
     });
   });
-  // const mockedAxios = axios as jest.Mocked<typeof axios>;
   it("  requests to correct post url", async () => {
-    // const data = { data: 1 };
-    //  mockedAxios.post.mockImplementationOnce(() => Promise.resolve("1"));
-    //  await expect(createMsTeamNotification.res).resolves.toEqual("1");
     await createMsTeamNotification(snsEventPayload);
     expect(axios.post).toHaveBeenCalledWith(
       "https://mrisoftware.webhook.office.com/webhookb2/ead50a4b-bba4-4756-a319-cb4d0a447646@e04e9f50-006e-4eaa-ab0b-e804b0c7b7d1/IncomingWebhook/b0089b0e0e9b41e0bd21aa9b0409b5f5/af59a89f-b463-4506-9204-a937eac07b6f",
