@@ -9,14 +9,14 @@
 ```typescript
 import { CdkStarterStack } from 'cdk-codepipeline-ms-teams-notifications'
 
-new CdkStarterStack(scope: App, id: string, props?: StackProps)
+new CdkStarterStack(scope: App, id: string, props?: CdkStarterStackProps)
 ```
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#cdk-codepipeline-ms-teams-notifications.CdkStarterStack.Initializer.parameter.scope">scope</a></code> | <code>aws-cdk-lib.App</code> | *No description.* |
 | <code><a href="#cdk-codepipeline-ms-teams-notifications.CdkStarterStack.Initializer.parameter.id">id</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#cdk-codepipeline-ms-teams-notifications.CdkStarterStack.Initializer.parameter.props">props</a></code> | <code>aws-cdk-lib.StackProps</code> | *No description.* |
+| <code><a href="#cdk-codepipeline-ms-teams-notifications.CdkStarterStack.Initializer.parameter.props">props</a></code> | <code><a href="#cdk-codepipeline-ms-teams-notifications.CdkStarterStackProps">CdkStarterStackProps</a></code> | *No description.* |
 
 ---
 
@@ -34,7 +34,7 @@ new CdkStarterStack(scope: App, id: string, props?: StackProps)
 
 ##### `props`<sup>Optional</sup> <a name="props" id="cdk-codepipeline-ms-teams-notifications.CdkStarterStack.Initializer.parameter.props"></a>
 
-- *Type:* aws-cdk-lib.StackProps
+- *Type:* <a href="#cdk-codepipeline-ms-teams-notifications.CdkStarterStackProps">CdkStarterStackProps</a>
 
 ---
 
@@ -340,8 +340,27 @@ Convert an object, potentially containing tokens, to a JSON string.
 
 | **Name** | **Description** |
 | --- | --- |
+| <code><a href="#cdk-codepipeline-ms-teams-notifications.CdkStarterStack.isConstruct">isConstruct</a></code> | Checks if `x` is a construct. |
 | <code><a href="#cdk-codepipeline-ms-teams-notifications.CdkStarterStack.isStack">isStack</a></code> | Return whether the given object is a Stack. |
 | <code><a href="#cdk-codepipeline-ms-teams-notifications.CdkStarterStack.of">of</a></code> | Looks up the first stack scope in which `construct` is defined. |
+
+---
+
+##### ~~`isConstruct`~~ <a name="isConstruct" id="cdk-codepipeline-ms-teams-notifications.CdkStarterStack.isConstruct"></a>
+
+```typescript
+import { CdkStarterStack } from 'cdk-codepipeline-ms-teams-notifications'
+
+CdkStarterStack.isConstruct(x: any)
+```
+
+Checks if `x` is a construct.
+
+###### `x`<sup>Required</sup> <a name="x" id="cdk-codepipeline-ms-teams-notifications.CdkStarterStack.isConstruct.parameter.x"></a>
+
+- *Type:* any
+
+Any object.
 
 ---
 
@@ -387,6 +406,7 @@ The construct to start the search from.
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
+| <code><a href="#cdk-codepipeline-ms-teams-notifications.CdkStarterStack.property.node">node</a></code> | <code>constructs.Node</code> | The tree node. |
 | <code><a href="#cdk-codepipeline-ms-teams-notifications.CdkStarterStack.property.account">account</a></code> | <code>string</code> | The AWS account into which this stack will be deployed. |
 | <code><a href="#cdk-codepipeline-ms-teams-notifications.CdkStarterStack.property.artifactId">artifactId</a></code> | <code>string</code> | The ID of the cloud assembly artifact for this stack. |
 | <code><a href="#cdk-codepipeline-ms-teams-notifications.CdkStarterStack.property.availabilityZones">availabilityZones</a></code> | <code>string[]</code> | Returns the list of AZs that are available in the AWS environment (account/region) associated with this stack. |
@@ -406,6 +426,30 @@ The construct to start the search from.
 | <code><a href="#cdk-codepipeline-ms-teams-notifications.CdkStarterStack.property.templateOptions">templateOptions</a></code> | <code>aws-cdk-lib.ITemplateOptions</code> | Options for CloudFormation template (like version, transform, description). |
 | <code><a href="#cdk-codepipeline-ms-teams-notifications.CdkStarterStack.property.terminationProtection">terminationProtection</a></code> | <code>boolean</code> | Whether termination protection is enabled for this stack. |
 | <code><a href="#cdk-codepipeline-ms-teams-notifications.CdkStarterStack.property.urlSuffix">urlSuffix</a></code> | <code>string</code> | The Amazon domain suffix for the region in which this stack is defined. |
+
+---
+
+##### `node`<sup>Required</sup> <a name="node" id="cdk-codepipeline-ms-teams-notifications.CdkStarterStack.property.node"></a>
+
+```typescript
+public readonly node: Node;
+```
+
+- *Type:* constructs.Node
+
+The tree node.
+
+---
+
+##### `node`<sup>Required</sup> <a name="node" id="cdk-codepipeline-ms-teams-notifications.CdkStarterStack.property.node"></a>
+
+```typescript
+public readonly node: Node;
+```
+
+- *Type:* constructs.Node
+
+The tree node.
 
 ---
 
@@ -716,6 +760,194 @@ The Amazon domain suffix for the region in which this stack is defined.
 ---
 
 
+## Structs <a name="Structs" id="Structs"></a>
+
+### CdkStarterStackProps <a name="CdkStarterStackProps" id="cdk-codepipeline-ms-teams-notifications.CdkStarterStackProps"></a>
+
+#### Initializer <a name="Initializer" id="cdk-codepipeline-ms-teams-notifications.CdkStarterStackProps.Initializer"></a>
+
+```typescript
+import { CdkStarterStackProps } from 'cdk-codepipeline-ms-teams-notifications'
+
+const cdkStarterStackProps: CdkStarterStackProps = { ... }
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#cdk-codepipeline-ms-teams-notifications.CdkStarterStackProps.property.analyticsReporting">analyticsReporting</a></code> | <code>boolean</code> | Include runtime versioning information in this Stack. |
+| <code><a href="#cdk-codepipeline-ms-teams-notifications.CdkStarterStackProps.property.description">description</a></code> | <code>string</code> | A description of the stack. |
+| <code><a href="#cdk-codepipeline-ms-teams-notifications.CdkStarterStackProps.property.env">env</a></code> | <code>aws-cdk-lib.Environment</code> | The AWS environment (account/region) where this stack will be deployed. |
+| <code><a href="#cdk-codepipeline-ms-teams-notifications.CdkStarterStackProps.property.stackName">stackName</a></code> | <code>string</code> | Name to deploy the stack with. |
+| <code><a href="#cdk-codepipeline-ms-teams-notifications.CdkStarterStackProps.property.synthesizer">synthesizer</a></code> | <code>aws-cdk-lib.IStackSynthesizer</code> | Synthesis method to use while deploying this stack. |
+| <code><a href="#cdk-codepipeline-ms-teams-notifications.CdkStarterStackProps.property.tags">tags</a></code> | <code>{[ key: string ]: string}</code> | Stack tags that will be applied to all the taggable resources and the stack itself. |
+| <code><a href="#cdk-codepipeline-ms-teams-notifications.CdkStarterStackProps.property.terminationProtection">terminationProtection</a></code> | <code>boolean</code> | Whether to enable termination protection for this stack. |
+| <code><a href="#cdk-codepipeline-ms-teams-notifications.CdkStarterStackProps.property.topics">topics</a></code> | <code>aws-cdk-lib.aws_sns.Topic[]</code> | *No description.* |
+
+---
+
+##### `analyticsReporting`<sup>Optional</sup> <a name="analyticsReporting" id="cdk-codepipeline-ms-teams-notifications.CdkStarterStackProps.property.analyticsReporting"></a>
+
+```typescript
+public readonly analyticsReporting: boolean;
+```
+
+- *Type:* boolean
+- *Default:* `analyticsReporting` setting of containing `App`, or value of 'aws:cdk:version-reporting' context key
+
+Include runtime versioning information in this Stack.
+
+---
+
+##### `description`<sup>Optional</sup> <a name="description" id="cdk-codepipeline-ms-teams-notifications.CdkStarterStackProps.property.description"></a>
+
+```typescript
+public readonly description: string;
+```
+
+- *Type:* string
+- *Default:* No description.
+
+A description of the stack.
+
+---
+
+##### `env`<sup>Optional</sup> <a name="env" id="cdk-codepipeline-ms-teams-notifications.CdkStarterStackProps.property.env"></a>
+
+```typescript
+public readonly env: Environment;
+```
+
+- *Type:* aws-cdk-lib.Environment
+- *Default:* The environment of the containing `Stage` if available, otherwise create the stack will be environment-agnostic.
+
+The AWS environment (account/region) where this stack will be deployed.
+
+Set the `region`/`account` fields of `env` to either a concrete value to
+select the indicated environment (recommended for production stacks), or to
+the values of environment variables
+`CDK_DEFAULT_REGION`/`CDK_DEFAULT_ACCOUNT` to let the target environment
+depend on the AWS credentials/configuration that the CDK CLI is executed
+under (recommended for development stacks).
+
+If the `Stack` is instantiated inside a `Stage`, any undefined
+`region`/`account` fields from `env` will default to the same field on the
+encompassing `Stage`, if configured there.
+
+If either `region` or `account` are not set nor inherited from `Stage`, the
+Stack will be considered "*environment-agnostic*"". Environment-agnostic
+stacks can be deployed to any environment but may not be able to take
+advantage of all features of the CDK. For example, they will not be able to
+use environmental context lookups such as `ec2.Vpc.fromLookup` and will not
+automatically translate Service Principals to the right format based on the
+environment's AWS partition, and other such enhancements.
+
+---
+
+*Example*
+
+```typescript
+// Use a concrete account and region to deploy this stack to:
+// `.account` and `.region` will simply return these values.
+new Stack(app, 'Stack1', {
+  env: {
+    account: '123456789012',
+    region: 'us-east-1'
+  },
+});
+
+// Use the CLI's current credentials to determine the target environment:
+// `.account` and `.region` will reflect the account+region the CLI
+// is configured to use (based on the user CLI credentials)
+new Stack(app, 'Stack2', {
+  env: {
+    account: process.env.CDK_DEFAULT_ACCOUNT,
+    region: process.env.CDK_DEFAULT_REGION
+  },
+});
+
+// Define multiple stacks stage associated with an environment
+const myStage = new Stage(app, 'MyStage', {
+  env: {
+    account: '123456789012',
+    region: 'us-east-1'
+  }
+});
+
+// both of these stacks will use the stage's account/region:
+// `.account` and `.region` will resolve to the concrete values as above
+new MyStack(myStage, 'Stack1');
+new YourStack(myStage, 'Stack2');
+
+// Define an environment-agnostic stack:
+// `.account` and `.region` will resolve to `{ "Ref": "AWS::AccountId" }` and `{ "Ref": "AWS::Region" }` respectively.
+// which will only resolve to actual values by CloudFormation during deployment.
+new MyStack(app, 'Stack1');
+```
+
+
+##### `stackName`<sup>Optional</sup> <a name="stackName" id="cdk-codepipeline-ms-teams-notifications.CdkStarterStackProps.property.stackName"></a>
+
+```typescript
+public readonly stackName: string;
+```
+
+- *Type:* string
+- *Default:* Derived from construct path.
+
+Name to deploy the stack with.
+
+---
+
+##### `synthesizer`<sup>Optional</sup> <a name="synthesizer" id="cdk-codepipeline-ms-teams-notifications.CdkStarterStackProps.property.synthesizer"></a>
+
+```typescript
+public readonly synthesizer: IStackSynthesizer;
+```
+
+- *Type:* aws-cdk-lib.IStackSynthesizer
+- *Default:* `DefaultStackSynthesizer` if the `@aws-cdk/core:newStyleStackSynthesis` feature flag is set, `LegacyStackSynthesizer` otherwise.
+
+Synthesis method to use while deploying this stack.
+
+---
+
+##### `tags`<sup>Optional</sup> <a name="tags" id="cdk-codepipeline-ms-teams-notifications.CdkStarterStackProps.property.tags"></a>
+
+```typescript
+public readonly tags: {[ key: string ]: string};
+```
+
+- *Type:* {[ key: string ]: string}
+- *Default:* {}
+
+Stack tags that will be applied to all the taggable resources and the stack itself.
+
+---
+
+##### `terminationProtection`<sup>Optional</sup> <a name="terminationProtection" id="cdk-codepipeline-ms-teams-notifications.CdkStarterStackProps.property.terminationProtection"></a>
+
+```typescript
+public readonly terminationProtection: boolean;
+```
+
+- *Type:* boolean
+- *Default:* false
+
+Whether to enable termination protection for this stack.
+
+---
+
+##### `topics`<sup>Required</sup> <a name="topics" id="cdk-codepipeline-ms-teams-notifications.CdkStarterStackProps.property.topics"></a>
+
+```typescript
+public readonly topics: Topic[];
+```
+
+- *Type:* aws-cdk-lib.aws_sns.Topic[]
+
+---
 
 
 
