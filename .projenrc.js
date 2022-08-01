@@ -3,7 +3,7 @@ const { NodePackageManager } = require('projen/lib/javascript');
 const project = new awscdk.AwsCdkConstructLibrary({
   author: 'Harsh Rohila',
   authorAddress: 'harsh.rohila@mrisoftware.com',
-  cdkVersion: '2.0.0',
+  cdkVersion: '2.8.0',
   defaultReleaseBranch: 'master',
   name: 'cdk-codepipeline-ms-teams-notifications',
   repositoryUrl:
@@ -14,9 +14,14 @@ const project = new awscdk.AwsCdkConstructLibrary({
     'dev:deploy': "pnpm build && cdk deploy --app='./lib/integ.default.js'",
     'dev:synth': "pnpm build && cdk synth --app='./lib/integ.default.js'",
   },
-
-  bundledDeps: ['axios'],
+  docgen: false,
+  bundledDeps: [
+    'axios',
+    '@cloudcomponents/cdk-developer-tools-notifications',
+    '@cloudcomponents/cdk-chatops',
+  ],
   devDeps: ['esbuild'],
+  peerDeps: ['constructs@^10.0.41'],
 
   gitignore: ['cdk.out'],
 
